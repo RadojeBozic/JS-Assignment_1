@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapremina valjka_primer1</title>
+</head>
+<body>
+    <h1>Zapremina valjka</h1>
+<p>Formula za obračunavanje zapremine valjka:</p>
+<p>V = r<sup>2</sup> * π * H</p>
+<ul>
+    <li>r - poluprečnik osnove valjka</li>
+    <li>H - visina</li>
+    <li>π - konstanta Pi, približno 3,14</li>
+</ul>
+<p>Osvežite stranicu i unesite željene vrednosi poluprečnika i visine valjka.</p>
+    <script>
+        let r = parseFloat(prompt("Unesite vrednost poluprečnika osnove:", 0));
+        let h = parseFloat(prompt("Unesite vrednost visine:", 0));
+        let v = Math.pow(r , 2) * Math.PI * h;
+        alert("Zapremina valjka je:" + v.toFixed(4));
+
+    </script>
+    
+</body>
+</html>

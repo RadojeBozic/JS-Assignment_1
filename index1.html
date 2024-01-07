@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapremina valjka_primer2</title>
+</head>
+<body>
+    <div>
+        <h1>Zapremina valjka</h1>
+        <p>Formula za obračunavanje zapremine valjka:</p>
+        <p>V = r<sup>2</sup> * π * H</p>
+        <ul>
+            <li>r - poluprečnik osnove valjka</li>
+            <li>H - visina</li>
+            <li>π - konstanta Pi, približno 3,14</li>
+        </ul>
+        <form>
+            <label for="poluprecnik">Unesite poluprečnik osnove valjka:</label><br>
+            <input type="number" id="poluprecnik" autocomplete="off" value="1"><b>cm</b><br>
+            <label for="visina">Unesite visinu valjka:</label><br>
+            <input type="number" id="visina" autocomplete="off" value="1"><b>cm</b><br><br>
+            <label for="rezultat">Rezultat:</label><br>
+            <input id="rezultat" type="number" value="3.141592653589793"><b>cm<sup>3</sup></b><br><br>
+            <button type="button" id="butt">Izračunaj</button>
+
+        </form>
+    </div>
+    <script>
+        let butt = document.getElementById("butt");
+        let poluprecnik = document.getElementById("poluprecnik");
+        let visina = document.getElementById("visina");
+
+    butt.addEventListener("click", () => {
+    var summ = document.getElementById("rezultat"); 
+    summ.value =poluprecnik.value * poluprecnik.value * Math.PI *  visina.value; 
+}); 
+    
+    </script>
+    
+</body>
+</html>
